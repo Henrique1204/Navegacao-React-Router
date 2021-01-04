@@ -1,3 +1,10 @@
 .Conteudo {
-    
+    padding: 2rem;
+    background-color: #DDD;
+    display: flex;
+    flex: 1;
+}
+
+.Conteudo h1 {
+    margin: 0;
 }

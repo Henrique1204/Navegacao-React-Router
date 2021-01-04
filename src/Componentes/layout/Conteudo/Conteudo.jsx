@@ -3,7 +3,7 @@ import estilos from "./Conteudo.module.css";
 
 const Conteudo = (props) => (
     <main className={estilos.Conteudo}>
-        Componente Conteúdo.
+        <h1>Componente Conteúdo.</h1>
     </main>
 );
 

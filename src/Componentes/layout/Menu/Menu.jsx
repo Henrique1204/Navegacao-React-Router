@@ -9,7 +9,9 @@ const Menu = (props) => (
         <nav>
             <ul>
                 <li><Link to="/" >Ínicio</Link></li>
-                <li><Link to="sobre" >Sobre</Link></li>
+                <li><Link to="/sobre" >Sobre</Link></li>
+                <li><Link to="/parametro/123" >Parametro #01</Link></li>
+                <li><Link to="/parametro/legal" >Parametro #02</Link></li>
             </ul>
         </nav>
     </aside>

@@ -1,9 +1,23 @@
 import React from "react";
+// Estilo.
 import estilos from "./Conteudo.module.css";
+// Componentes da interface.
+import Home from "../../../Telas/exemplos/Home.jsx";
+import Sobre from "../../../Telas/exemplos/Sobre.jsx";
+// Componentes externos.
+import { Switch, Route } from "react-router-dom";
 
 const Conteudo = (props) => (
     <main className={estilos.Conteudo}>
-        <h1>Componente Conteúdo.</h1>
+        <Switch>
+            <Route path="/sobre">
+                <Sobre />
+            </Route>
+
+            <Route path="/">
+                <Home />
+            </Route>
+        </Switch>
     </main>
 );
 

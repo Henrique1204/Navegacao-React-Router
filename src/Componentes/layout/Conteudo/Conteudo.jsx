@@ -5,6 +5,7 @@ import estilos from "./Conteudo.module.css";
 import Home from "../../../Telas/exemplos/Home.jsx";
 import Sobre from "../../../Telas/exemplos/Sobre.jsx";
 import Parametro from "../../../Telas/exemplos/Parametro.jsx";
+import NotFound from "../../../Telas/exemplos/NotFound.jsx";
 // Componentes externos.
 import { Switch, Route } from "react-router-dom";
 
@@ -21,6 +22,10 @@ const Conteudo = (props) => (
 
             <Route path="/parametro/:id">
                 <Parametro />
+            </Route>
+
+            <Route path="*">
+                <NotFound />
             </Route>
         </Switch>
     </main>

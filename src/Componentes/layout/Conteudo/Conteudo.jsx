@@ -11,16 +11,16 @@ import { Switch, Route } from "react-router-dom";
 const Conteudo = (props) => (
     <main className={estilos.Conteudo}>
         <Switch>
-            <Route path="/parametro/:id">
-                <Parametro />
+            <Route exact path="/">
+                <Home />
             </Route>
 
             <Route path="/sobre">
                 <Sobre />
             </Route>
 
-            <Route path="/">
-                <Home />
+            <Route path="/parametro/:id">
+                <Parametro />
             </Route>
         </Switch>
     </main>
